@@ -1,5 +1,5 @@
 /*
- * Rule: When using a vendor-prefixed gradient, make sure to use them all.
+ * Rule: When using a :hover ensure that it has been anchored with the <a> tag.
  */
 /*global CSSLint*/
 CSSLint.addRule({
@@ -8,7 +8,7 @@ CSSLint.addRule({
     id: "non-link-hover",
     name: "Non-Link Hover",
     desc: "Using :hover pseudo-selector to non-link elements is known to be slow.",
-    browsers: "IE",
+    browsers: "IE7, IE8",
 
     //initialization
     init: function(parser, reporter){
