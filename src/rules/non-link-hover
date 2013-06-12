@@ -1,5 +1,5 @@
 /*
- * Rule: When using a :hover ensure that it has been anchored with the <a> tag.
+ * Rule: When using a :hover selector ensure that it has been anchored with the <a> tag.
  */
 /*global CSSLint*/
 CSSLint.addRule({
