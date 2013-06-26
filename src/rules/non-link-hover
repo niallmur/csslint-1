@@ -28,7 +28,7 @@ CSSLint.addRule({
                 part = selector.parts[selector.parts.length-1];
 				
 				if (part.modifiers.length-1 !== -1){
-				if (part.modifiers[part.modifiers.length-1].text === ":hover" && (part.elementName == null || part.elementName != "a")){
+				if (part.modifiers[part.modifiers.length-1].text === ":hover" && (part.elementName == null || (part.elementName != "a" && part.elementName != "A"))){
                     reporter.warn(rule.desc, part.line, part.col, rule);
                 }
 				}
